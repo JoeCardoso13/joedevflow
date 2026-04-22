@@ -28,16 +28,16 @@ If no argument is provided, the agent reads `HANDOFF.md` when present. Otherwise
 
             separation of concerns for agentic SWE work
 
-        +----------------------+     +----------------------+
-        |  1. DESIGN           | --> |  2. TEST (RED)       |
-        |    What? Why? How?   |     |    What? Assert it!  |
-        +----------------------+     +----------------------+
+        +----------------------+     +-------------------------+
+        |  1. DESIGN           | --> |  2. TEST (RED)          |
+        |    What? Why? How?   |     |    What? Assert it!     |
+        +----------------------+     +-------------------------+
                     ^                            |
                     |                            v
-        +----------------------+     +----------------------+
-        |  4. OBSERVE, DEBUG   | <-- |  3. IMPLEMENT (GREEN)|
-        |     & MAINTAIN       |     | Asserted? Implement! |
-        +----------------------+     +----------------------+
+        +----------------------+     +-------------------------+
+        |  4. OBSERVE, DEBUG   | <-- |  3. IMPLEMENT (GREEN)   |
+        |     & MAINTAIN       |     |    Asserted? Implement! |
+        +----------------------+     +-------------------------+
 
              think -> test -> build -> verify -> maintain
 ```
