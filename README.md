@@ -59,7 +59,7 @@ Each mode ends by writing a `HANDOFF.md` file at the repository root. The handof
 - What risks or open questions remain
 - What mode should happen next
 
-This matters because agentic work often spans multiple contexts. `HANDOFF.md` makes the workflow durable even when a later agent or session has to pick up from a previous one.
+This matters because effective agent engineering depends on using context windows deliberately. `HANDOFF.md` lets independent agents work in separate context windows without sharing the whole conversation history. Each agent receives the contract it needs, produces the next contract, and leaves a compact handoff for parallel or follow-on work.
 
 ## Usage
 
@@ -81,4 +81,3 @@ If no argument is provided, the agent reads `HANDOFF.md` when present. Otherwise
 `joedevflow` is not a general instruction to "write better code." It is a workflow boundary.
 
 It keeps an agent from blending discovery, specification, implementation, and maintenance into one vague coding pass. That separation is the point: design produces a testable contract, tests lock in the contract, implementation satisfies the tests, and observation keeps the system healthy after the initial change is done.
-
