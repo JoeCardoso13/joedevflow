@@ -1,5 +1,7 @@
 # joedevflow
 
+An agentic software engineering workflow skill centered on TDD, separation of concerns, and deliberate context management.
+
 ## Install
 
 ```bash
