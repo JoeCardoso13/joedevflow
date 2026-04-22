@@ -30,13 +30,13 @@ If no argument is provided, the agent reads `HANDOFF.md` when present. Otherwise
 
         +----------------------+     +----------------------+
         |  1. DESIGN           | --> |  2. TEST (RED)       |
-        |  shape the contract  |     |  prove the contract  |
+        |    What? Why? How?   |     |    What? Assert it!  |
         +----------------------+     +----------------------+
                     ^                            |
                     |                            v
         +----------------------+     +----------------------+
-        |  4. OBSERVE, DEBUG   | <-- |  3. IMPLEMENT        |
-        |     & MAINTAIN       |     |     (GREEN)          |
+        |  4. OBSERVE, DEBUG   | <-- |  3. IMPLEMENT (GREEN)|
+        |     & MAINTAIN       |     | Asserted? Implement! |
         +----------------------+     +----------------------+
 
              think -> test -> build -> verify -> maintain
