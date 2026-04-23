@@ -1,1 +1,9 @@
+# joedevflow handoff artifacts
 HANDOFF.md
+
+# Local agent/tool state
+.codex
+.codex/
+.claude/
+.cursor/
+.cursorrules

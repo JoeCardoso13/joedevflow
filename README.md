@@ -2,6 +2,8 @@
 
 An agentic software engineering workflow skill centered on TDD, separation of concerns, and deliberate context management.
 
+`joedevflow` helps coding agents work in explicit phases instead of blending planning, tests, implementation, and debugging into one pass. It is designed for feature work, MVPs, refactors, bug fixes, and any task where implementation code will change.
+
 ## Install
 
 ```bash
@@ -9,6 +11,18 @@ npx skills add JoeCardoso13/joedevflow
 ```
 
 This uses Vercel Labs' `skills` CLI to add `joedevflow` to your local agent skills setup. It installs the `SKILL.md` package so supported coding agents can discover it.
+
+To install it globally for Codex, use:
+
+```bash
+npx skills add JoeCardoso13/joedevflow -g -a codex
+```
+
+To install it for a specific project and agent, run the command from the project root and choose the target agent when prompted, or pass an agent explicitly:
+
+```bash
+npx skills add JoeCardoso13/joedevflow -a codex
+```
 
 ## Usage
 
@@ -98,3 +112,7 @@ flowchart TD
     C1["Make the red tests pass<br/>Do not edit the tests"] --> C
     D1["Verify, cover, debug, and preserve behavior<br/>Regression tests before fixes"] --> D
 ```
+
+## License
+
+MIT
