@@ -115,4 +115,4 @@ flowchart TD
 
 ## License
 
-MIT
+[MIT](LICENSE)
