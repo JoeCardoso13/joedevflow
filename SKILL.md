@@ -2,6 +2,7 @@
 name: joedevflow
 description: Development workflow. Use when building a feature, creating an MVP, refactoring code, fixing a bug, or any task that involves writing or changing implementation code.
 argument-hint: "[design|test|implement|debug]"
+tools: [AskUserQuestion]
 ---
 
 Work happens in exactly 4 modes. Operate in one mode at a time.
@@ -84,9 +85,16 @@ Treat the mode's input contract as the only shared state you can rely on.
 
 ### Mode Handoff
 
-At the end of each mode, (over)write a handoff to `HANDOFF.md` at the repository root.
+At the end of each mode,check whether to proceed:
 
-`HANDOFF.md` is the canonical cross-mode handoff artifact. It should contain the latest authoritative handoff, replacing any previous handoff content unless the user explicitly asks for a historical log.
+**If the `AskUserQuestion` tool is available**, call it with these options:
+- "Yes — write HANDOFF.md" → write the handoff (see format below)
+- "No — skip it" → do not write the file; just summarize the mode in chat
+- "Hold on — we're not done with this mode yet" → remain in the current mode; do not write
+
+**If `AskUserQuestion` is not available**, default to writing the handoff.
+
+Overwrite `HANDOFF.md` at the repository root, in case it exists. `HANDOFF.md` is the canonical cross-mode handoff artifact. It should contain the latest authoritative handoff, replacing any previous handoff content unless the user explicitly asks for a historical log.
 
 **Mode:** <DESIGN | TEST_RED | IMPLEMENT_GREEN | OBSERVE_DEBUG>
 **Goal:** <what this mode was trying to accomplish>
