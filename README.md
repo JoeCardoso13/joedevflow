@@ -12,18 +12,6 @@ npx skills add JoeCardoso13/joedevflow
 
 This uses Vercel Labs' `skills` CLI to add `joedevflow` to your local agent skills setup. It installs the `SKILL.md` package so supported coding agents can discover it.
 
-To install it globally for Codex, use:
-
-```bash
-npx skills add JoeCardoso13/joedevflow -g -a codex
-```
-
-To install it for a specific project and agent, run the command from the project root and choose the target agent when prompted, or pass an agent explicitly:
-
-```bash
-npx skills add JoeCardoso13/joedevflow -a codex
-```
-
 ## Usage
 
 Use `joedevflow` when an agent is building a feature, creating an MVP, refactoring code, fixing a bug, or doing any task that involves writing or changing implementation code.
